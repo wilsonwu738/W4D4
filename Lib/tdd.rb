@@ -21,9 +21,12 @@ class Array
     end
     arr
   end
-
-  
-
-
-
 end
+
+def my_transpose(matrix)
+  matrix.transpose
+end
+
+
+
+

@@ -15,10 +15,44 @@ describe Array do
     end
 
   end
+end
+
+describe "my_transpose" do 
+  it "should swap the rows and columns of the matrix" do
+    rows = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8]
+    ]
+
+    cols = [
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8]
+    ]
+    expect(my_transpose(rows)).to eq(cols)
+
+    rows_2 = [
+      [0, 1, 2, 3],
+      [4, 5, 6, 7],
+      [8, 9, 0, 1],
+      [2, 3, 4, 5]
+    ]
+
+    cols_2 = [
+      [0, 4, 8, 2],
+      [1, 5, 9, 3],
+      [2, 6, 0, 4],
+      [3, 7, 1, 5]
+    ]
+    expect(my_transpose(rows_2)).to eq(cols_2)
+
+  end
+
 
 
 
 
 end
 
-  
+
