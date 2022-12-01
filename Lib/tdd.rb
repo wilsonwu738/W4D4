@@ -27,6 +27,38 @@ def my_transpose(matrix)
   matrix.transpose
 end
 
+def stock_picker(prices)
+  gain = 0
+  pair = []
+
+  i = 0
+  while i < prices.length - 1
+    j = i + 1
+    while j < prices.length
+      if prices[j] - prices[i] > gain
+        pair = [i, j]
+        gain = prices[j] - prices[i]
+      end
+      j += 1
+    end
+    i += 1
+  end
+  pair
+end
+
+
+class Hanoi
+
+  attr_accessor :arr_1, :arr_2, :arr_3
+  def initialize
+    @arr_1 = [4, 3, 2, 1]
+    @arr_2 = []
+    @arr_3 = []
+  end
+
+  
+
+end
 
 
 

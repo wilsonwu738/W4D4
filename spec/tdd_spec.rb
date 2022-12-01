@@ -48,11 +48,22 @@ describe "my_transpose" do
     expect(my_transpose(rows_2)).to eq(cols_2)
 
   end
+end
 
+describe "stock_picker" do
+  it "should return an sorted array of length two" do
+    expect(stock_picker([0, 4])).to eq ([0,1])
+  end
 
+  it "should still return an sorted array of length two even with larger array" do
+    expect(stock_picker([0, 4, 9, 10, -3, 200, -100, 0])).to eq ([4, 5])
+  end
 
+end
 
+describe Hanoi do
 
+  
 end
 
 
