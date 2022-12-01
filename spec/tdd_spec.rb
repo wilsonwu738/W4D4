@@ -8,8 +8,12 @@ end
 
 
 describe Array do 
+
   describe "#two_sum" do
-    
+    it "should return the indeces of two numbers that sum up to 0" do
+      expect([-1, 0, 2, -2, 1].two_sum).to eq([[0, 4], [2, 3]])
+    end
+
   end
 
 
